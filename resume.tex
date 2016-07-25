@@ -1,0 +1,139 @@
+% LaTeX resume using res.cls
+\documentclass[10pt]{res} % default is 10 pt
+%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+%\usepackage{newcent}   % uses new century schoolbook postscript font 
+\usepackage{latexsym}   % to get the \Box symbol
+\usepackage{setspace}
+%\setlength{\textheight}{10in} % increase text height to fit resume on 1 page
+\topmargin=-0.5in % start text higher on the page
+
+%http://www.devdaily.com/blog/post/latex/control-line-spacing-in-itemize-enumerate-tags/
+\newenvironment{packed_item}{
+\begin{itemize}
+  \setlength{\itemsep}{1pt}
+  \setlength{\parskip}{0pt}
+  \setlength{\parsep}{0pt}
+}{\end{itemize}}
+
+
+\begin{document} 
+ 
+\name{Benjamin Sanabria Carr} 
+\address{9128 SE Harrison St \\ Portland OR 97216 \\ (503) 703-5611 \\
+			carrbens@gmail.com \\ github.com/carrbs}        
+         
+                        
+\begin{resume}                         
+ 
+%\section{Objective}  
+%  To obtain a part-time position in software development and database management that will lead 
+%  to a full-time position.
+   
+\section{Education \& Training}
+B.S., Computer Science, 2013\\ 
+Maseeh College of Engineering and Computer Science, \\
+Portland State University, Portland, OR \\
+%Major focused in data structures, algorithms and language with a minor in Mathematics. 
+Recent courses included discrete structures, algorithms, databases and functional programming.
+
+% Computer Action Team, Braindump Seminars, 2009-2010 \\
+% Portland State University, Portland, OR \\
+% Weekly, in-depth seminars focused in systems administration (Solaris, Linux, and Windows) 
+% led by the IT department of the Maseeh College at Portland State University.
+% 
+% Certified Scrum Master training course and certification, May 2012 \\
+% Scrum Alliance / Collab.net \\
+% This was a two day course to prepare our development team (at Intel) for agile development. 
+% It was a grand overview of the Scrum approach with a focus in preparing us to be 
+% Scrum Masters and Scrum Team members.
+
+\section{Career Development} \vspace{.05in}
+Software Engineer, October 2012 - Present\\
+Idealist.org / Action Without Borders, Portland, OR
+
+\begin{packed_item}
+	\item{Maintain monolithic, internationalized Python/PostgreSQL app built using \\Genshi Components}
+	\item{Create solutions to problem statements provided by the Product team using agile methods}
+	\item{Exercise pair/mob programming}
+	\item{Built a standalone app using node.js/React.js mimicing the existing idealist.org/add-org webpage}
+	\item{When possible, make contributions to the open source community}
+\end{packed_item}
+
+Lead organizer / Founder, October 2014 - Present\\
+Portland ReactJS User Group, Portland, OR
+
+\begin{packed_item}
+    \item{Created a monthly group for ReactJS enthusiaists in the Portland Metro Area}
+    \item{Organize and manage speakers, venues, sponsors, catering, and co-organizers}
+    \item{Encourage talks from underrepresented groups}
+    \item{Moderate and manage Slack / Integrations for the user group}
+\end{packed_item}
+
+
+Software Developer Intern, April 2012 - September 2012\\
+Intel Corporation, Hillsboro, OR
+\begin{packed_item}
+	\item{Developed libraries using C\verb!#! for an automated test environment}
+	\item{Wrote test scripts in VBScript utilizing those libraries to test Wi-Fi hardware and software}
+			% in an automated test environment}
+	\item{Gained experience in agile development and pair programming}
+\end{packed_item}
+
+Software Engineering Intern, September 2011 - March 2012\\
+Center for Coastal Margin Observation \& Prediction (OHSU), Portland, OR
+\begin{packed_item}
+	\item{Converted web based search application from Windows / Java development 
+			environment to a production CentOS (Linux) environment}
+	\item{Programmed in Python, interfaced with PostgreSQL database}
+\end{packed_item}
+
+Software Engineering Intern, March 2011 - September 2011 \\ 
+Daimler Trucks North America, Portland, OR
+\begin{packed_item}
+	\item{Worked in .NET framework, programmed in C\verb!#!}
+	\item{Interfaced applications with Microsoft SQL Server to create testing 
+			applications for the manufacturing engineering department of Daimler 
+			Trucks North America}
+\end{packed_item}
+
+% Help Desk, Computer Action Team, September 2009 - June 2010\\
+% Maseeh College of Engineering and Computer Science,
+% Portland State University, Portland, OR
+% \begin{packed_item}
+% \item{Provided IT services, customer service and technical support for users and team members}
+% \end{packed_item}
+
+Manager, Shaky Hands, LLC, Portland, OR, 2005-2011
+\begin{packed_item}
+\item{Liaison between the band, ``Shaky Hands'' and their record labels, booking
+  agencies, publicist, lawyer and accountant. Direct contact for licensing, marketing, and publishing contracts}
+\item{Designed team-oriented strategies for long-term success and problem
+  solving}
+\item{Maintained general financial records and bookkeeping for the LLC}
+\end{packed_item}
+
+\section{Special Skills / Stuff I've Worked With} 
+\begin{itemize}
+%\begin{packed_item}
+\item Programming Languages: C, C\verb!++!, C\verb!#!, Haskell, Java, JavaScript, 
+      Python, R, VBScript
+\item Markup Languages: HTML, \LaTeX, Genshi, JSX
+\item Database Systems: PostgreSQL, Microsoft SQL Server, MySQL, redis
+\item Search indexing: xapian
+\item ORM experience: SQLAlchemy
+\item Version Control: Git, Mercurial, Subversion
+\item Certified Scrum Master
+%\end{packed_item}
+\end{itemize}
+
+\section{References} 
+Available upon request
+
+\end{resume}
+\end{document}
+
+
+
+
+
+
