@@ -1,3 +1,5 @@
 *.cls
+*.dvi
 *.log
 *.pdf
+*.swp
